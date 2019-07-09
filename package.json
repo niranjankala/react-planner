@@ -1,69 +1,41 @@
 {
-  "name": "react-planner",
-  "version": "2.0.5",
-  "description": "react-planner is a React Component for plans design. Draw a 2D floorplan and navigate it in 3D mode.",
-  "main": "lib/index.js",
-  "module": "es/index.js",
-  "jsnext:main": "es/index.js",
-  "scripts": {
-    "start": "webpack-dev-server --inline --config demo/webpack.config.js --port 9000 --mode development",
-    "build-demo": "webpack --config demo/webpack.config.js --mode production",
-    "build-commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
-    "build-es": "cross-env BABEL_ENV=es babel src --copy-files --out-dir es",
-    "build": "npm run clean && npm run build-demo && npm run build-commonjs && npm run build-es",
-    "add-build-to-vcs": "git add -A src/version.js && git add -A es && git add -A lib && git add -A demo/dist",
-    "clean": "rimraf lib es demo/dist",
-    "website-update": "gh-pages -m 'Update gh-pages' -d ./demo/dist/",
-    "update-version-file": "const-version ./package.json ./src/version.js",
-    "version": "npm run update-version-file && npm run build && npm run add-build-to-vcs",
-    "postpublish": "npm run website-update",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "_from": "react-planner",
+  "_id": "react-planner@2.0.5",
+  "_inBundle": false,
+  "_integrity": "sha512-wwQYekJrMYI0Ko7KzXOBpJJz/DVRY0Ky0jDUQ6fSsLQx+rI9Cev3UpPd8Nfsw73bCfioH8uamX18ivCwk4S9qw==",
+  "_location": "/react-planner",
+  "_phantomChildren": {
+    "emojis-list": "2.1.0",
+    "html-minifier": "3.5.21",
+    "lodash": "4.17.11",
+    "object-assign": "4.1.1",
+    "pretty-error": "2.1.1",
+    "tapable": "1.1.3",
+    "toposort": "1.0.7",
+    "util.promisify": "1.0.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cvdlab/react-planner.git"
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-planner",
+    "name": "react-planner",
+    "escapedName": "react-planner",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
-  "keywords": [
-    "floorplanner",
-    "plan",
-    "svg",
-    "3d",
-    "home design",
-    "interior design",
-    "react",
-    "react-component",
-    "react.js",
-    "ui",
-    "interface",
-    "component"
+  "_requiredBy": [
+    "#USER",
+    "/"
   ],
-  "license": "MIT",
+  "_resolved": "https://registry.npmjs.org/react-planner/-/react-planner-2.0.5.tgz",
+  "_shasum": "4e9fa0f73233cab36082e1cc25620a1fb44e6263",
+  "_spec": "react-planner",
+  "_where": "/home/shivamkumarshiv/Devworkspace/react-webgl",
   "bugs": {
     "url": "https://github.com/cvdlab/react-planner/issues"
   },
-  "maintainers": [
-    {
-      "url": "https://github.com/chrvadala",
-      "name": "chrvadala"
-    },
-    {
-      "url": "https://github.com/danilosalvati",
-      "name": "danilosalvati"
-    },
-    {
-      "url": "https://github.com/enricomarino",
-      "name": "enricomarino"
-    },
-    {
-      "url": "https://github.com/federicospini",
-      "name": "federicospini"
-    },
-    {
-      "url": "https://github.com/alessiocarrafa",
-      "name": "alessiocarrafa"
-    }
-  ],
-  "homepage": "https://github.com/cvdlab/react-planner#readme",
+  "bundleDependencies": false,
   "dependencies": {
     "@mapbox/react-range": "0.0.7",
     "area-polygon": "1.0.1",
@@ -81,6 +53,8 @@
     "redux": "4.0.1",
     "shortid": "2.2.14"
   },
+  "deprecated": false,
+  "description": "react-planner is a React Component for plans design. Draw a 2D floorplan and navigate it in 3D mode.",
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-core": "6.26.3",
@@ -106,9 +80,70 @@
     "webpack-cli": "3.3.0",
     "webpack-dev-server": "3.2.1"
   },
+  "homepage": "https://github.com/cvdlab/react-planner#readme",
+  "jsnext:main": "es/index.js",
+  "keywords": [
+    "floorplanner",
+    "plan",
+    "svg",
+    "3d",
+    "home design",
+    "interior design",
+    "react",
+    "react-component",
+    "react.js",
+    "ui",
+    "interface",
+    "component"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "maintainers": [
+    {
+      "name": "chrvadala",
+      "url": "https://github.com/chrvadala"
+    },
+    {
+      "name": "danilosalvati",
+      "url": "https://github.com/danilosalvati"
+    },
+    {
+      "name": "enricomarino",
+      "url": "https://github.com/enricomarino"
+    },
+    {
+      "name": "federicospini",
+      "url": "https://github.com/federicospini"
+    },
+    {
+      "name": "alessiocarrafa",
+      "url": "https://github.com/alessiocarrafa"
+    }
+  ],
+  "module": "es/index.js",
+  "name": "react-planner",
   "peerDependencies": {
     "react": "16.x",
     "react-dom": "16.x",
     "three": "0.94.x"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cvdlab/react-planner.git"
+  },
+  "scripts": {
+    "add-build-to-vcs": "git add -A src/version.js && git add -A es && git add -A lib && git add -A demo/dist",
+    "build": "npm run clean && npm run build-demo && npm run build-commonjs && npm run build-es",
+    "build-commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
+    "build-demo": "webpack --config demo/webpack.config.js --mode production",
+    "build-es": "cross-env BABEL_ENV=es babel src --copy-files --out-dir es",
+    "clean": "rimraf lib es demo/dist",
+    "postpublish": "npm run website-update",
+    "start": "webpack-dev-server --inline --config demo/webpack.config.js --host 0.0.0.0 --port 9000 --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update-version-file": "const-version ./package.json ./src/version.js",
+    "version": "npm run update-version-file && npm run build && npm run add-build-to-vcs",
+    "website-update": "gh-pages -m 'Update gh-pages' -d ./demo/dist/"
+  },
+  "version": "2.0.5"
 }
